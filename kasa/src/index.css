@@ -104,11 +104,12 @@ header{
 
 .sections p{
     font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-color: #ffff;
-margin: 0 50% 0 0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #ffff;
+    margin: 0 50% 0 0;
+    text-decoration: none;
 
 }
 
@@ -116,5 +117,92 @@ margin: 0 50% 0 0;
     padding: 50% 50%;
     max-width: 100%;
     overflow: hidden;
+}
+
+/*************footer*********/
+
+.bot{
+    border: 3px solid red;
+    margin: 0 10%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bot_text{
+    color: #ffff;
+}
+
+.img_footer{
+    margin: 3% 3%;
+    flex: 1;
+}
+
+.text_footer{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    flex: 2;
+    margin: 1.5% 1.5%;
+}
+
+/**********************error404****************************/
+
+.mid_404{
+    border: 3px solid red;
+    margin: 0 10%;
+    height: 80vh;
+}
+
+.le404{
+    display: flex;
+    border: 3px solid red;
+    align-items: center;
+    justify-content: center;
+}
+
+.le404 p{
+   font-family: 'Montserrat';
+   font-weight: 700;
+   font-size: 288px;
+   color: #FF6060;
+   padding: 5% 5%;
+}
+
+.text_404{
+    display: flex;
+    border: 3px solid red;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_404 p{
+    color: #FF6060;
+    font-family: 'Montserrat';
+    font-size: 51px;
+    font-weight: 500;
+}
+
+.text_404_return{
+    display: flex;
+    border: 3px solid red;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.text_404_return p{
+    color: #FF6060;
+    font-family: 'Montserrat';
+    font-size: 26px;
+    font-weight: 500;
+    padding: 6% 0;
+}
+
+.a_404{
+    text-decoration: none;
 }
 

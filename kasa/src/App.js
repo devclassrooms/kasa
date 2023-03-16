@@ -3,6 +3,7 @@ import './App.css';
 import Nav from './accueil/navbar.jsx'
 import ImgHeader from './accueil/img-header.jsx'
 import Product from './accueil/product.jsx'
+import Fouter from './accueil/footer.jsx'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Nav/>
       <ImgHeader/>
       <Product/>
+      <Fouter/>
     </div>
   );
 }
