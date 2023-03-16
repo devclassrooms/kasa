@@ -1,35 +1,43 @@
-import React from 'react';
+import React, { Children } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import {createBrowserRouter, RouterProvider} from 'react-router-dom';
+import {createBrowserRouter, Outlet, RouterProvider} from 'react-router-dom';
 import Nav from './accueil/navbar';
 import Foot from './accueil/footer';
 import Error404 from './erreur404/error404';
 
+const Navfooter = () => {
+  return (
+  <>
+    <Nav/>
+    <main>
+    <Outlet/>
+    </main>
+    <Foot/>
+  </>
+  );
+};
 
 const router = createBrowserRouter([
   {
-      path: "/",
-      element: <App/>,
-      errorElement : <div><Nav/><Error404/></div>
+    errorElement : (<> <Nav/><Error404/> </>),
+    element: <Navfooter/>,
+    children : [
+      {
+        path: "/apropos",
+        element: <h1>A propos</h1>
+      },
+      {
+        path: "/appartement",
+        element: <h1>Appartement</h1>
+      }
+    ]
   },
   {
-      path: "/",
-      element: <h1>Accueil</h1>
-  },
-  {
-    path: "/apropos",
-    element: <div><Nav/> <h1>A propos</h1> <Foot/></div>
-  },
-  {
-    path: "/appartement",
-    element: <h1>Appartement</h1>
-  },
-  {
-    path: "/404",
-    element: <h1>Erreur 404</h1>
+    path: "/",
+    element: <App/>
   }
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
