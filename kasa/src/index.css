@@ -346,6 +346,7 @@ main{
     background-color: #FF6060;
     width: 10%;
     border-radius: 25px;
+    margin: 0 0.5% 0 0;
 }
 
 .cozy p{
@@ -359,6 +360,7 @@ main{
     background-color: #FF6060;
     width: 10%;
     border-radius: 25px;
+    margin: 0 0.5%;
 }
 
 .canal p {
@@ -372,6 +374,7 @@ main{
     background-color: #FF6060;
     width: 10%;
     border-radius: 25px;
+    margin: 0 0.5%;
 }
 
 .paris p{
