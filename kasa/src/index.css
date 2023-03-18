@@ -60,6 +60,7 @@ header{
 .mask_group {
     border:3px solid black;
     position: relative;
+    padding: 3% 0;
     /*text-align: center;*/
 }
 
