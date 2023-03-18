@@ -267,3 +267,226 @@ main{
     padding: 0 10%;
 }
 
+/*******************appartement************************/
+
+.img_apart{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.section_image{
+    padding: 3% 0;
+}
+
+.group_appart p, h1{
+    color: #FF6060;
+}
+
+.section_title_appart{
+    display: flex;
+}
+
+.section_image_et_user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.h1_appart {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.h1_appart h1{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+    
+}
+
+.nom_user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7%;
+    margin: 0 10%;
+}
+
+.img_du_user1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_du_user1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50% 50%;
+
+}
+
+.appart_ville p{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.section_canal{
+    display: flex;
+    padding: 2% 0;
+}
+
+.cozy{
+    background-color: #FF6060;
+    width: 10%;
+    border-radius: 25px;
+}
+
+.cozy p{
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.canal{
+    background-color: #FF6060;
+    width: 10%;
+    border-radius: 25px;
+}
+
+.canal p {
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paris{
+    background-color: #FF6060;
+    width: 10%;
+    border-radius: 25px;
+}
+
+.paris p{
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etoile{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.les_etoiles{
+    display: contents;
+
+}
+
+.section_description{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.group_description{
+    width: 45%;
+}
+
+.group_equipement{
+    width: 45%;
+}
+
+.description{
+    
+    background: #FF6060;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.description p{
+    font-size: 18px;
+    color: #ffff;
+    padding: 0 3%;
+
+}
+
+.equipement{
+    background: #FF6060;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.equipement p{
+    font-size: 18px;
+    color: #Ffff;
+    padding: 0 3%;
+}
+
+.le_text_description p{
+    font-size: 18px;
+    padding: 4% 4%;
+
+}
+
+.le_text_equipement{
+    font-size: 18px;
+    padding: 4% 4%;
+}
+
+@media screen and (max-width : 600px) {
+    
+    .img_apart img{
+      
+    }
+}
+
+/*********************page apropos**********************************/
+
+
+
+.image_apropos img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.group_apropos{
+    padding: 3% 0;
+    color: #FF6060;
+}
+
+.group_text{
+    padding: 3% 5%;
+}
+
+.section_element{
+    background: #FF6060;
+    padding: 1% 0;
+    border-radius: 5px;
+}
+
+.section_element p{
+    color: #ffff;
+    padding: 0 2%;
+}
+
+.description_apropos{
+    padding: 3% 3%;
+
+}
+
+

@@ -7,6 +7,8 @@ import {createBrowserRouter, Outlet, RouterProvider} from 'react-router-dom';
 import Nav from './accueil/navbar';
 import Foot from './accueil/footer';
 import Error404 from './erreur404/error404';
+import Appartement from './appartement/appartement';
+import Apropos from './apropos/apropos'
 
 const Navfooter = () => {
   return (
@@ -27,11 +29,11 @@ const router = createBrowserRouter([
     children : [
       {
         path: "/apropos",
-        element: <h1>A propos</h1>
+        element: <Apropos/>
       },
       {
         path: "/appartement",
-        element: <h1>Appartement</h1>
+        element: <Appartement/>
       }
     ]
   },
