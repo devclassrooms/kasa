@@ -1,11 +1,11 @@
 import React from 'react'
+import Banniere from '../components/Banniere'
+import ImageApropos from '../images/img_apropos.png'
 
 function apropos() {
   return (
     <div className='group_apropos'>
-        <div className='image_apropos'>
-            <img src='img_apropos.png' className='image_apropos'></img>
-        </div>
+        <Banniere titre="" image={ImageApropos}/>
         <div className='group_text'>
             <div className='section_fiabilité'>
                 <div className='section_element'>

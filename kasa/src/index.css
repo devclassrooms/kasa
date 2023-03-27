@@ -3,6 +3,13 @@
     margin: 0 0 0 0;
 }
 
+/*****************************************************/
+
+main{
+    padding: 0 10%;
+}
+/*****************************************************/
+
 .body_ {
     border: 2px solid red;
     height: 100vh;
@@ -16,7 +23,9 @@ header{
     display: flex;
     justify-content: space-between;
     margin: 0 10%;
+    height: 8vh;
 }
+
 
 .nav{
     display: flex;
@@ -33,17 +42,17 @@ header{
 }
 
 .link__accueil{
-    margin: 0 35px;
+    margin: 0 3vw;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    /*font-size: 24px;*/
+    font-size: 2.5vh;
     color: #FF6060;
 }
 
 .link__apropos{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    /*font-size: 24px;*/
+    font-size: 2.5vh;
     text-decoration: none;
     color: #FF6060;
     
@@ -53,7 +62,6 @@ header{
 
 .section_1
 {
-    margin: 0 10%;
     position: relative;
 }
 
@@ -69,6 +77,7 @@ header{
     filter: brightness(0.85);
     z-index: 2;
     width: 100%;
+    height: 24vh;
    
 }
 
@@ -80,16 +89,43 @@ header{
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffff;
-    font-size: 46px;
+    font-size: 3.25vh;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
 
 }
+
+@media screen and (max-width : 760px) {
+
+    .text_accueil{
+        text-align:left;
+        width: 80%;
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffff;
+        font-size: 3.25vh;
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 500;
+    
+    }
+
+    .mask_group img {
+        border-radius: 25px;
+        filter: brightness(0.85);
+        z-index: 2;
+        width: 100%;
+        height: 20vh;
+    }
+}
+
 /************annonce product.jsx********************/
 .product{
     border: 3px solid blue;
-    margin: 0 10%;
     display: flex;
     justify-content: space-between;
     min-height: 100px;
@@ -102,9 +138,9 @@ header{
 
 .product a{
     width: 25%;
+    min-width: 210px;
 
 }
-
 .sections{
     border: 3px solid red;
     padding: 20px 20px;
@@ -124,13 +160,68 @@ header{
     color: #ffff;
     margin: 0 50% 0 0;
     text-decoration: none;
+    padding: 3% 0;
 
+}
+
+@media screen and (max-width : 1400px) {
+    .approp_footer{
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width : 760px) {
+    
+    .product a{
+        width: 100%;
+    
+    }
+    .sections{
+        border: 3px 
+        solid red;
+        padding: 20px 20px;
+        margin: 20px 0;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+        border-radius: 10px;
+        background-color: #FF6060;
+    
+    
+    }
+
+    header{
+        border: 2px solid red;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 5%;
+        height: 8vh;
+    }
+
+    main{
+        padding: 0 5%;
+    }
+
+    .approp_footer{
+        height: 75vh;
+    }
+}
+
+@media screen and (max-width : 400px) {
+    .approp_footer{
+        height: 93vh;
+    }
 }
 
 .img__section{
     padding: 50% 50%;
     max-width: 100%;
     overflow: hidden;
+    display: contents;
+}
+
+.img__section img{
+    width: 100%;
+    height: 26vh;
+    border-radius: 10px;
 }
 
 /*************footer*********/
@@ -262,21 +353,19 @@ header{
     
 }
 
-/*****************************************************/
-
-main{
-    padding: 0 10%;
-}
 
 /*******************appartement************************/
 
 .img_apart{
     width: 100%;
     border-radius: 25px;
+    height: 42vh;
+    object-fit: cover;
 }
 
 .section_image{
     padding: 3% 0;
+    position: relative;
 }
 
 .group_appart p, h1{
@@ -354,6 +443,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 2.7%;
 }
 
 .canal{
@@ -398,11 +488,12 @@ main{
 .section_description{
     display: flex;
     justify-content: space-between;
+    width: 100%;
 
 }
 
 .group_description{
-    width: 45%;
+    width: 90%;
 }
 
 .group_equipement{
@@ -469,28 +560,149 @@ main{
 }
 
 .group_apropos{
-    padding: 3% 0;
     color: #FF6060;
+    /************width: 48%;***************/
 }
 
 .group_text{
-    padding: 3% 5%;
+    padding: 0 5% 3% 5%; /*3% 5%;*/
 }
 
 .section_element{
     background: #FF6060;
     padding: 1% 0;
     border-radius: 5px;
+    display: flex;
+}
+
+@media screen and (max-width : 760px) {
+
+    .section_element{
+        background: #FF6060;
+        padding: 2% 1%;
+        border-radius: 5px;
+        display: flex;
+    }
+    .group_text{
+        padding: 0 0 3% 0; /*3% 5%;*/
+    }
 }
 
 .section_element p{
     color: #ffff;
     padding: 0 2%;
+    flex-grow: 1;
+}
+
+.section_element img{
+    padding: 0 0.8%;
 }
 
 .description_apropos{
     padding: 3% 3%;
+    background: #f7f7f7;
+    border-radius: 10px;
 
 }
+/*************fleche***********/
+.fleches{
+    width: 95%;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fleches .droite{
+    position: absolute;
+    left: 96.3%;
+    height: 8vh;
+    width: 3vw;
+}
+
+.fleches .gauche{
+    height: 8vh;
+    width: 3vw;
+}
+
+.nbrPhoto{
+    color: white;
+    font-size: 3vh;
+    z-index: 1;
+    position: absolute;
+    top: 200%;
+    left: 50%;
+}
+/********************************/
 
 
+
+
+/***************************
+
+<div className='group_appart'>
+            <div className=' group_information'>
+                <div className='section_title_appart'>
+                    <div className='h1_appart'>
+                        <h1>Cozy loft on the Canal Saint-Martin</h1>
+                    </div>
+                    <div className='section_image_et_user'>
+                        <div className='nom_user'>
+                            <p>Alexandre Dumas</p>
+                        </div>
+                        <div className='img_du_user'>
+                            <img src='img_appartement.png' alt='image appartement' className='img_du_user1'></img>
+                        </div>
+                    </div>
+                </div>
+                <div className='appart_ville'>
+                    <p>Paris, Île-de-France</p>
+                </div>
+            </div>
+            <div className='section_canal'>
+                <div className='cozy'>
+                    <p>Cozy</p>
+                </div>
+                <div className='canal'>
+                    <p>Canal</p>
+                </div>
+                <div className='paris'>
+                    <p>Paris 10</p>
+                </div>
+                <div className='les_etoiles'>
+                    <div className='etoile'>etoile</div>
+                </div>
+            </div>s
+
+
+
+
+
+            <div className='section_description'>
+            <div className='group_description'>
+                <div className='description'>
+                    <p className='description_text'>{titre}Description</p>
+                </div>
+                <div className='le_text_description'>
+                    <p>Vous serez à 50m du canal Saint-martin où vous pourrez <br></br> pique-niquer l'été et à côté de nombreux bars et restaurants.<br></br> Au cœur de Paris avec 5 lignes de métro et de nombreux<br></br> bus. Logement parfait pour les<br></br> voyageurs en solo et les voyageurs d'affaires. Vous êtes à1 station de la gare de l'est (7 <br></br>minutes à pied).</p>
+                </div>
+            </div>
+            <div className='group_equipement'>
+                <div className='equipement'>
+                    <p>Équipements</p>
+                </div>
+                <div className='le_text_equipement'>
+                    <p>Climatisation<br></br>
+                        Wi-Fi<br></br>
+                        Cuisine<br></br>
+                        Espace de travail<br></br>
+                        Fer à repasser<br></br>
+                        Sèche-cheveux<br></br>
+                        Cintres<br></br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+******************************/
