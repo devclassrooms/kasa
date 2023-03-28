@@ -4,6 +4,12 @@
     height: 42vh;
     object-fit: cover;
     filter: brightness(0.85);
+    min-height: 415px;
+}
+
+.equipeSpan{
+    display: flex;
+    flex-direction: column;
 }
 
 .section_image{
@@ -210,6 +216,14 @@
 
 @media screen and (max-width : 600px) {
     
+    .img_apart{
+        width: 100%;
+        border-radius: 25px;
+        height: 42vh;
+        object-fit: cover;
+        filter: brightness(0.85);
+        min-height: 255px;
+    }
     .h1_appart h1 {
         font-family: 'Montserrat';
         font-size: 160%;

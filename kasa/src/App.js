@@ -1,5 +1,5 @@
 import React from 'react';
-import './App.css';
+/*import './App.css';*/
 import {createBrowserRouter, Outlet, RouterProvider} from 'react-router-dom';
 /*import Nav from './accueil/navbar';
 import Foot from './accueil/footer';*/
@@ -9,7 +9,7 @@ import Accueil from './pages/Accueil';
 import Annonces from './components/Annonce';
 import Appartement from './pages/Appartement';
 import Erreur404 from './pages/Erreur404';
-import Imgapart from './components/ImgApart';
+/*import Imgapart from './components/ImgApart';*/
 import Descriptionapp from './pages/Apropos';
 
 

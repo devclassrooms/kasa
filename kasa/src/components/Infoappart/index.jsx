@@ -3,7 +3,6 @@ import etoileOrange from '../../images/etoileorange.png'
 import etoileGris from '../../images/etoilegris.png'
 
 function infoAppart({titreAppart, nomPrenom, imageUser, nomVille, cozy, rate, arondissement }){
-    console.log('/',rate);
   return (
     <div className='group_appart'>
             <div className=' group_information'>
@@ -26,18 +25,18 @@ function infoAppart({titreAppart, nomPrenom, imageUser, nomVille, cozy, rate, ar
             </div>
             <div className='section_canal'>
                 {cozy.map((cozy) => (
-                    <div className='cozy'>
+                    <div key={cozy} className='cozy'>
                         <p>{cozy}</p>
                     </div>
                 ))}
                 <div className='les_etoiles'>
                     <div className='etoile'>
                         <div className='group_etoiles'>
-                        {Array(rate).fill().map(() =>(
-                            <img src={etoileOrange}></img>
+                        {Array(rate).fill().map((r,i) =>(
+                            <img key={`colored-${i}`} src={etoileOrange}></img>
                         ))}
-                        {Array(5 - rate).fill().map(() =>(
-                            <img src={etoileGris}></img>
+                        {Array(5 - rate).fill().map((r,i) =>(
+                            <img key={`grayed-${i}`} src={etoileGris}></img>
                         ))}
                         </div>
                     <div className='section_image_et_user_mobile'>

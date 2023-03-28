@@ -5,6 +5,11 @@
     justify-content: flex-end;
 }
 
+.active p{
+    text-decoration: underline;
+
+}
+
 .logo{
     margin: 1% 0;
     display: flex;
@@ -21,6 +26,7 @@
     font-weight: 500;
     font-size: 2.5vh;
     color: #FF6060;
+    text-decoration: none;
 }
 
 .link__apropos{

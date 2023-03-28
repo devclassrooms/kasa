@@ -1,7 +1,8 @@
 import React from 'react'
 import Infoappart from '../../components/Infoappart'
 import Accordeon from '../../components/Accordeon'
-import { useLocation, useParams } from 'react-router-dom';
+/*import { useLocation, useParams } from 'react-router-dom';*/
+import { useParams } from 'react-router-dom';
 import fichieJson from '../../data/index.json'
 import Imgapart from '../../components/ImgApart';
 import './index.css'
@@ -9,24 +10,28 @@ import './index.css'
 function Appartement() {
   
   const {id} = useParams();
-  const elementsAppart = fichieJson.filter((appart) => appart.id === id)
-  let abc1 = Number(elementsAppart[0].rating)
-  console.log("-",elementsAppart[0].rating, abc1)
+  const elementsAppart = fichieJson.find((appart) => appart.id === id)
+  let abc1 = Number(elementsAppart.rating)
+  /*console.log("-",elementsAppart.rating, abc1)*/
   return (
     <div className='appart_d'>
-      <Imgapart imagesAppart={elementsAppart[0].pictures}/>
+      <Imgapart imagesAppart={elementsAppart.pictures}/>
       <div className='group_appart'>
           <div>
-              <Infoappart titreAppart = {elementsAppart[0].title}
-              nomPrenom = {elementsAppart[0].host.name} imageUser= {elementsAppart[0].host.picture} nomVille= {elementsAppart[0].location}
-              cozy={elementsAppart[0].tags}rate={abc1} arondissement={elementsAppart[0].tags[2]} />
+              <Infoappart titreAppart = {elementsAppart.title}
+              nomPrenom = {elementsAppart.host.name} imageUser= {elementsAppart.host.picture} nomVille= {elementsAppart.location}
+              cozy={elementsAppart.tags}rate={abc1} arondissement={elementsAppart.tags[2]} />
           </div>
           <div className='section_description'>
               <div className='accordeon_e'>
-                <Accordeon titre='Description' descriptionInfo={elementsAppart[0].description}/>
+                <Accordeon titre='Description' descriptionInfo={elementsAppart.description}/>
               </div>
-                <div className='accordeon_z'>
-              <Accordeon titre='Équipements' descriptionInfo={elementsAppart[0].equipments}/>
+              <div className='accordeon_z'>
+                <Accordeon titre='Équipements'>
+                  <div className='equipeSpan description_apropos'>
+                    {elementsAppart.equipments.map((equipe) => <span key={equipe}>{equipe}</span>)}
+                  </div>
+                </Accordeon>
               </div>
           </div>
       </div>

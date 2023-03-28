@@ -3,7 +3,7 @@ import flechehaut from '../../images/flechehaut.png'
 import flechebas from '../../images/flechebas.png'
 import './index.css'
 
-function Accordeon({titre, descriptionInfo}) {
+function Accordeon({titre, descriptionInfo, children}) {
     const [isopen, setIsopen] = useState(false); //state 
     return (
     <div className='group_apropos'>
@@ -15,9 +15,10 @@ function Accordeon({titre, descriptionInfo}) {
                         setIsopen(!isopen);
                     }} src={isopen ? flechehaut : flechebas} alt='fleche'></img>
                 </div>
-                {isopen ? <div className='description_apropos'>
+                {isopen && descriptionInfo ? <div className='description_apropos'>
                     <p>{descriptionInfo}</p>
                 </div> : null}
+                {isopen && children}
             </div>
         </div>
     </div>
