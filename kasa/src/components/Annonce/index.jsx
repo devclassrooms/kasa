@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom"
 import logements from "../../data/index.json"
+import './index.css'
 
 function product() {
     return (

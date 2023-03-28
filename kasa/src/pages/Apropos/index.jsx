@@ -2,6 +2,7 @@ import React from 'react'
 import Accordeon from '../../components/Accordeon'
 import Banniere from '../../components/Banniere'
 import ImageApropos from '../../images/img_apropos.png'
+import './index.css'
 
 function apropos() {
   return (

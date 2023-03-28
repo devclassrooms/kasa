@@ -32,12 +32,22 @@ function infoAppart({titreAppart, nomPrenom, imageUser, nomVille, cozy, rate, ar
                 ))}
                 <div className='les_etoiles'>
                     <div className='etoile'>
-                    {Array(rate).fill().map(() =>(
-                        <img src={etoileOrange}></img>
-                    ))}
-                    {Array(5 - rate).fill().map(() =>(
-                        <img src={etoileGris}></img>
-                    ))}
+                        <div className='group_etoiles'>
+                        {Array(rate).fill().map(() =>(
+                            <img src={etoileOrange}></img>
+                        ))}
+                        {Array(5 - rate).fill().map(() =>(
+                            <img src={etoileGris}></img>
+                        ))}
+                        </div>
+                    <div className='section_image_et_user_mobile'>
+                        <div className='nom_user'>
+                            <p>{nomPrenom}</p>
+                        </div>
+                        <div className='img_du_user'>
+                            <img src={imageUser} alt='image appartement' className='img_du_user1'></img>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>

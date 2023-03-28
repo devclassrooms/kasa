@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import flechedroit from '../../images/flechedroite.png';
 import flechegauche from '../../images/flechegauche.png';
+import './index.css'
 
 function ImgApart({imagesAppart}) {
     const [imgIndex, setImgIndex] = useState(0);

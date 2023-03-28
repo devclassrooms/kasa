@@ -4,6 +4,7 @@ import Accordeon from '../../components/Accordeon'
 import { useLocation, useParams } from 'react-router-dom';
 import fichieJson from '../../data/index.json'
 import Imgapart from '../../components/ImgApart';
+import './index.css'
 
 function Appartement() {
   
@@ -12,7 +13,7 @@ function Appartement() {
   let abc1 = Number(elementsAppart[0].rating)
   console.log("-",elementsAppart[0].rating, abc1)
   return (
-    <div>
+    <div className='appart_d'>
       <Imgapart imagesAppart={elementsAppart[0].pictures}/>
       <div className='group_appart'>
           <div>
@@ -21,9 +22,13 @@ function Appartement() {
               cozy={elementsAppart[0].tags}rate={abc1} arondissement={elementsAppart[0].tags[2]} />
           </div>
           <div className='section_description'>
-              <Accordeon titre='Description' descriptionInfo={elementsAppart[0].description}/>
+              <div className='accordeon_e'>
+                <Accordeon titre='Description' descriptionInfo={elementsAppart[0].description}/>
+              </div>
+                <div className='accordeon_z'>
               <Accordeon titre='Équipements' descriptionInfo={elementsAppart[0].equipments}/>
               </div>
+          </div>
       </div>
     </div>
   )

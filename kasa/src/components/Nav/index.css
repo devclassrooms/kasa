@@ -1,0 +1,33 @@
+.nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.logo{
+    margin: 1% 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 90%;
+}
+
+.link__accueil{
+    margin: 0 3vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.5vh;
+    color: #FF6060;
+}
+
+.link__apropos{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: #FF6060;
+    
+}

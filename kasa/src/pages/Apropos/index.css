@@ -1,0 +1,118 @@
+.image_apropos img{
+    width: 100%;
+    border-radius: 25px;
+}
+
+.group_apropos{
+    color: #FF6060;
+    width: 100%;
+    /************width: 48%;***************/
+}
+
+.group_text{
+    padding: 0 0 2% 0; /*3% 5%;*/
+}
+
+.section_element{
+    background: #FF6060;
+    padding: 1.05% 0;
+    border-radius: 5px;
+    display: flex;
+}
+
+.accordeon_e
+{
+    width: 100%;
+    margin: 0 20px 0 0;
+}
+
+.accordeon_z{
+    width: 100%;
+    margin: 0 0 0 20px;
+}
+
+@media screen and (max-width : 760px) {
+
+    .section_element{
+        background: #FF6060;
+        padding: 2% 1%;
+        border-radius: 5px;
+        display: flex;
+        /*margin: 2% 3% 0 0;*/
+    }
+    .description_apropos {
+        padding: 3% 3%;
+        background: #f7f7f7;
+        border-radius: 10px;
+        /*margin: 0 3% 0 0;*/
+        
+    }
+    .group_text{
+        padding: 0 0 3% 0; /*3% 5%;*/
+    }
+    .section_element img{
+
+    }
+
+    .section_element p{
+        color: #ffff;
+        padding: 0 2%;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+    }
+    .group_apropos{
+        color: #FF6060;
+        /************width: 48%;***************/
+    }
+}
+
+@media screen and (max-width : 900px) {
+
+    .section_element{
+        background: #FF6060;
+        padding: 1.5% 1%;
+        border-radius: 5px;
+        display: flex;
+        font-size: 105%;
+    }
+    .cozy{
+        background-color: #FF6060;
+        /* width: 10%; */
+        height: 20%;
+        border-radius: 25px;
+        margin: 0 0.5% 0 0;
+        padding: 0. 3.5%;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        font-size: 106%;
+        margin: 2% 0.5%;
+    }
+    .description_apropos {
+        padding: 3% 3%;
+        background: #f7f7f7;
+        border-radius: 10px;
+        font-size: 103%;
+    }
+
+}
+
+.section_element p{
+    color: #ffff;
+    padding: 0 2%;
+    flex-grow: 1;
+    font-size: 120%;
+}
+
+.section_element img{
+    padding: 0 1.8%;
+}
+
+.description_apropos{
+    padding: 3% 3%;
+    background: #f7f7f7;
+    border-radius: 10px;
+    font-size: 110%;
+
+}

@@ -1,0 +1,295 @@
+.img_apart{
+    width: 100%;
+    border-radius: 25px;
+    height: 42vh;
+    object-fit: cover;
+    filter: brightness(0.85);
+}
+
+.section_image{
+    padding: 3% 0;
+    position: relative;
+}
+
+.appart_d
+{
+    padding: 0 0 30px 0;
+}
+
+.group_appart p, h1{
+    color: #FF6060;
+}
+
+.section_element p{
+    color: #ffff;
+    padding: 0 2%;
+    flex-grow: 1;
+}
+
+.section_title_appart{
+    display: flex;
+}
+
+.section_image_et_user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.section_image_et_user_mobile{
+    display: none;
+}
+
+.h1_appart {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.h1_appart h1{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 500;
+    color: #FF6060;
+    
+}
+
+.nom_user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7%;
+    margin: 0 15%;
+}
+
+.img_du_user1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img_du_user1{
+    width: 60px;
+    height: 60px;
+    border-radius: 50% 50%;
+
+}
+
+.appart_ville p{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.section_canal{
+    display: flex;
+    padding: 3.5% 0;
+    align-items: center;
+}
+
+.cozy{
+    background-color: #FF6060;
+    /*width: 10%;*/
+
+    height: 20%;
+    border-radius: 25px;
+    margin: 0 0.5% 0 0;
+    padding: 0.1% 1.5%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.cozy p{
+    color: #ffff;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    padding: 2.7%;
+}
+
+.canal{
+    background-color: #FF6060;
+    width: 10%;
+    border-radius: 25px;
+    margin: 0 0.5%;
+}
+
+.canal p {
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paris{
+    background-color: #FF6060;
+    width: 10%;
+    border-radius: 25px;
+    margin: 0 0.5%;
+}
+
+.paris p{
+    color: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.etoile{
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.les_etoiles{
+    display: contents;
+
+}
+
+.section_description{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.group_description{
+    width: 90%;
+}
+
+.group_equipement{
+    width: 45%;
+}
+
+.description{
+    
+    background: #FF6060;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.description p{
+    font-size: 18px;
+    color: #ffff;
+    padding: 0 3%;
+
+}
+
+.equipement{
+    background: #FF6060;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.equipement p{
+    font-size: 18px;
+    color: #Ffff;
+    padding: 0 3%;
+}
+
+.le_text_description p{
+    font-size: 18px;
+    padding: 4% 4%;
+
+}
+
+.le_text_equipement{
+    font-size: 18px;
+    padding: 4% 4%;
+}
+
+@media screen and (max-width : 600px) {
+    
+    .h1_appart h1 {
+        font-family: 'Montserrat';
+        font-size: 160%;
+        font-weight: 500;
+        color: #FF6060;
+        padding: 3% 0;
+    }
+
+    .cozy p{
+        color: #ffff;
+        display: contents;
+        justify-content: center;
+        align-items: center;
+        padding: 2.7%;
+    }
+
+    .nom_user{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 7%;
+        margin: 0 30%;
+    }
+    .img_apart img{
+      
+    }
+    .section_description{
+        display: contents;
+        justify-content: space-between;
+        width: 100%;
+    
+    }
+    .section_canal{
+        display: flex;
+        padding: 5% 0 0 0;
+        flex-wrap: wrap;
+    }
+    .cozy{
+        background-color: #FF6060;
+        width: auto;
+        border-radius: 25px;
+        margin: 12px 0.5% 0 0;
+        padding: 0.5% 4%;
+    }
+    .etoile{
+        display: flex;
+        justify-content: space-between;
+        padding: 6% 0;
+        /*flex-grow: 1;*/
+        flex: 1;
+
+        
+    }
+    .les_etoiles{
+        display: flex;
+        width: 100%;
+        align-items: center;
+    
+    }
+    .group_etoiles
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_image_et_user{
+        display: none;
+    }
+    .section_image_et_user_mobile{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: flex-end;
+        width: 30%;
+    }
+    
+}
+
+/*.section_description {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}*/

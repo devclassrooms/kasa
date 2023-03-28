@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import flechehaut from '../../images/flechehaut.png'
 import flechebas from '../../images/flechebas.png'
+import './index.css'
 
 function Accordeon({titre, descriptionInfo}) {
     const [isopen, setIsopen] = useState(false); //state 
@@ -9,7 +10,7 @@ function Accordeon({titre, descriptionInfo}) {
         <div className='group_text'>
             <div className='section_fiabilité'>
                 <div className='section_element'>
-                    <p>{titre}Fiabilité</p>
+                    <p>{titre}</p>
                     <img onClick={() => {
                         setIsopen(!isopen);
                     }} src={isopen ? flechehaut : flechebas} alt='fleche'></img>
