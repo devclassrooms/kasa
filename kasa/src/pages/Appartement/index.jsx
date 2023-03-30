@@ -1,7 +1,6 @@
 import React from 'react'
 import Infoappart from '../../components/Infoappart'
 import Accordeon from '../../components/Accordeon'
-/*import { useLocation, useParams } from 'react-router-dom';*/
 import { useParams } from 'react-router-dom';
 import fichieJson from '../../data/index.json'
 import Imgapart from '../../components/ImgApart';
@@ -12,7 +11,6 @@ function Appartement() {
   const {id} = useParams();
   const elementsAppart = fichieJson.find((appart) => appart.id === id)
   let abc1 = Number(elementsAppart.rating)
-  /*console.log("-",elementsAppart.rating, abc1)*/
   return (
     <div className='appart_d'>
       <Imgapart imagesAppart={elementsAppart.pictures}/>
